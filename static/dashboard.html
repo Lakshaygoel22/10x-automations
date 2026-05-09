@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x Automations - Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <div class="grid-overlay"></div>
+    <div class="background-orbs"><div class="orb orb-1"></div></div>
+    
+    <nav class="navbar dashboard-nav" id="dynamicNav">
+        <a href="index.html" class="logo" style="text-decoration:none;">10x Automations Command Center</a>
+        <div class="nav-links">
+            <a href="library.html">My Library</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="index.html">Exit Dashboard</a>
+            <div id="authArea"></div>
+        </div>
+    </nav>
+
+    <div class="dashboard-layout">
+        <div class="panel config-panel glass-card">
+            <h2 style="margin-bottom: 20px;">Active Module: Reaction AI</h2>
+            <form id="analyzeForm">
+                
+                <div class="toggle-group">
+                    <span class="toggle-label">Deep Scan (Full History)</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-group">
+                    <span class="toggle-label">Auto-Engage AI DMs</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-group" style="margin-bottom: 25px;">
+                    <span class="toggle-label">Bypass Rate Limits (Proxy)</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label for="postUrl">LinkedIn Post URL</label>
+                    <input type="url" id="postUrl" required placeholder="https://www.linkedin.com/posts/...">
+                </div>
+                <div class="input-group">
+                    <label for="cookie">Secure Session Cookie (li_at)</label>
+                    <input type="password" id="cookie" required placeholder="••••••••••••••••••••">
+                </div>
+                <div class="input-group">
+                    <label for="userEmail">Report Destination</label>
+                    <input type="email" id="userEmail" required placeholder="ceo@company.com">
+                </div>
+                <button type="submit" id="submitBtn">
+                    <span class="btn-text">Execute Scan</span>
+                    <div class="loader hidden" id="loader"></div>
+                </button>
+                <div class="status-text hidden" id="statusText">Awaiting input...</div>
+            </form>
+            
+            <button id="downloadBtn" class="action-btn hidden" style="margin-top:20px; width:100%; background: linear-gradient(90deg, #03dac6, #00b4d8); font-size:1rem; padding: 15px;">Download CSV Export</button>
+
+            <div style="margin-top: 40px; text-align: center; color: #a5a5a5; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+                <p>&copy; 2026 10x Media. All rights reserved.</p>
+            </div>
+        </div>
+
+        <div class="panel live-panel glass-card">
+            <div class="panel-header">
+                <h2>Live Terminal Feed</h2>
+                <div class="pulse-dot hidden" id="liveIndicator"></div>
+            </div>
+            <div class="feed-grid" id="feedGrid">
+                <div style="color:#a5a5a5; width:100%; text-align:center; padding: 40px; grid-column: 1 / -1;">System standby. Waiting for deployment.</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Scrollable Expansion Sections -->
+    <div class="enterprise-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <a href="#">Fulfillment</a>
+                <a href="#">Inventory</a>
+                <a href="#">Integrations</a>
+                <a href="#">Analytics</a>
+            </div>
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <a href="#">DTC Brands</a>
+                <a href="#">B2B Wholesale</a>
+                <a href="#">Global Expansion</a>
+                <a href="#">Custom Packaging</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Partners</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="#">Help Center</a>
+                <a href="#">API Documentation</a>
+                <a href="#">Blog</a>
+                <a href="#">Case Studies</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 10x Automations (Ecomflow Theme). All rights reserved.</span>
+            <span>Privacy Policy | Terms of Service</span>
+        </div>
+    </div>
+
+        <!-- Background 3D Cubes -->
+    <div class="bg-cube-wrapper cube-1">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-2">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-3">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-4">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-toggle-btn" id="chatToggleBtn">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    </div>
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <span>Sales Representative</span>
+            <span class="chat-close" id="chatClose">✖</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-msg msg-ai">Welcome to 10x Automations. How can we streamline your supply chain and LinkedIn growth today?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type a message..." style="flex:1;">
+            <button id="chatSend" class="action-btn" style="padding: 10px 15px; min-width:auto;">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

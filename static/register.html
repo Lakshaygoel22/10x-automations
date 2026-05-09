@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x Automations - Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="background-orbs"><div class="orb orb-1"></div></div>
+    
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="text-decoration:none;">10x Automations</a>
+        <div class="nav-links">
+            <a href="marketplace.html">Marketplace</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="analytics.html">Analytics</a>
+            <div id="authArea"></div>
+        </div>
+    </nav>
+
+    <div class="auth-container glass-card">
+        <h2 style="text-align:center; margin-bottom: 20px;">Create Account</h2>
+        <a href="#" class="social-btn" onclick="simulateLogin()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/></svg>
+            Sign up with Google
+        </a>
+        <a href="#" class="social-btn" onclick="simulateLogin()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Sign up with LinkedIn
+        </a>
+        
+        <div class="divider">OR</div>
+        
+        <form onsubmit="event.preventDefault(); simulateLogin();">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" required placeholder="John Doe">
+            </div>
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" required placeholder="user@company.com">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="action-btn" style="width:100%; border-radius:12px; padding:15px; margin-top:10px;">Create Account</button>
+        </form>
+        
+        <p style="text-align:center; margin-top:20px; color:#a5a5a5;">Already have an account? <a href="login.html" style="color:#00b4d8; text-decoration:none;">Sign in</a></p>
+    </div>
+
+    <script>
+        function simulateLogin() {
+            localStorage.setItem('nexus_auth', 'true');
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    
+    <!-- Scrollable Expansion Sections -->
+    <div class="enterprise-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <a href="#">Fulfillment</a>
+                <a href="#">Inventory</a>
+                <a href="#">Integrations</a>
+                <a href="#">Analytics</a>
+            </div>
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <a href="#">DTC Brands</a>
+                <a href="#">B2B Wholesale</a>
+                <a href="#">Global Expansion</a>
+                <a href="#">Custom Packaging</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Partners</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="#">Help Center</a>
+                <a href="#">API Documentation</a>
+                <a href="#">Blog</a>
+                <a href="#">Case Studies</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 10x Automations (Ecomflow Theme). All rights reserved.</span>
+            <span>Privacy Policy | Terms of Service</span>
+        </div>
+    </div>
+
+        <!-- Background 3D Cubes -->
+    <div class="bg-cube-wrapper cube-1">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-2">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-3">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-4">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-toggle-btn" id="chatToggleBtn">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    </div>
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <span>Sales Representative</span>
+            <span class="chat-close" id="chatClose">✖</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-msg msg-ai">Welcome to 10x Automations. How can we streamline your supply chain and LinkedIn growth today?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type a message..." style="flex:1;">
+            <button id="chatSend" class="action-btn" style="padding: 10px 15px; min-width:auto;">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <header class="hero" style="margin-bottom: 30px;">
+        <h1 style="font-size:3rem;">The <span class="gradient-text">Marketplace</span></h1>
+        <p>Discover high-end automations built by world-class developers.</p>
+    </header>
+    
+    <div class="features-grid">
+        {% for product in products %}
+        <div class="glass-card product-card" style="padding: 0; overflow:hidden; display:flex; flex-direction:column;">
+            <img src="{{ product.img }}" style="width:100%; height:200px; object-fit:cover;" alt="Product Image">
+            <div style="padding: 20px; display:flex; flex-direction:column; flex:1;">
+                <h3 style="margin-bottom:10px;">{{ product.name }}</h3>
+                <p style="color:#a5a5a5; font-size:0.9rem; margin-bottom:15px;">By {{ product.author }}</p>
+                <div style="font-size:1.5rem; font-weight:800; color:#03dac6; margin-bottom:20px;">{{ product.price }}</div>
+                <a href="/product/{{ product.id }}" class="action-btn" style="text-align:center; margin-top:auto;">View Details</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

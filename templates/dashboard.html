@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x Automations - Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="dashboard-body">
+    <div class="grid-overlay"></div>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    
+    <nav class="navbar dashboard-nav">
+        <a href="/" class="logo" style="text-decoration:none;">10x Automations Command Center</a>
+        <div class="nav-links">
+            <a href="/library">My Library</a>
+            <a href="/">Exit Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-layout">
+        <div class="panel config-panel glass-card">
+            <h2 style="margin-bottom: 20px;">Active Module: Reaction AI</h2>
+            <form id="analyzeForm">
+                <div class="input-group">
+                    <label for="postUrl">LinkedIn Post URL</label>
+                    <input type="url" id="postUrl" required placeholder="https://www.linkedin.com/posts/...">
+                </div>
+                <div class="input-group">
+                    <label for="cookie">Secure Session Cookie (li_at)</label>
+                    <input type="password" id="cookie" required placeholder="••••••••••••••••••••">
+                </div>
+                <div class="input-group">
+                    <label for="userEmail">Report Destination</label>
+                    <input type="email" id="userEmail" required placeholder="ceo@company.com">
+                </div>
+                <button type="submit" id="submitBtn">
+                    <span class="btn-text">Execute Scan</span>
+                    <div class="loader hidden" id="loader"></div>
+                </button>
+                <div class="status-text hidden" id="statusText">Awaiting input...</div>
+            </form>
+            
+            <button id="downloadBtn" class="action-btn hidden" style="margin-top:20px; width:100%; background: linear-gradient(90deg, #03dac6, #00b4d8); font-size:1rem; padding: 15px;">Download CSV Export</button>
+
+            <div style="margin-top: 40px; text-align: center; color: #a5a5a5; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+                <p>&copy; 2026 10x Media. All rights reserved.</p>
+                <p>New digital product soon to be hosted on Whop.</p>
+            </div>
+        </div>
+
+        <div class="panel live-panel glass-card">
+            <div class="panel-header">
+                <h2>Live Terminal Feed</h2>
+                <div class="pulse-dot hidden" id="liveIndicator"></div>
+            </div>
+            <div class="feed-grid" id="feedGrid">
+                <div style="color:#a5a5a5; width:100%; text-align:center; padding: 40px; grid-column: 1 / -1;">System standby. Waiting for deployment.</div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

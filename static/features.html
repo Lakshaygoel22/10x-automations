@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x Automations - Features</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="background-orbs"><div class="orb orb-1"></div></div>
+    
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="text-decoration:none;">10x Automations</a>
+        <div class="nav-links">
+            <a href="marketplace.html">Marketplace</a>
+            <a href="library.html">My Library</a>
+            <a href="vendor.html">Vendor Portal</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="dashboard.html" class="nav-btn" style="text-decoration:none;">Deploy Agent</a>
+            <a href="analytics.html">Analytics</a>
+            <div id="authArea"></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero" style="margin-bottom: 30px;">
+            <h1 style="font-size:3rem;">Powerful <span class="gradient-text">Features</span></h1>
+        </header>
+        <div class="features-grid">
+            <div class="glass-card">
+                <h3>Real-Time Scraping</h3>
+                <p>Watch as our Playwright agent extracts reactions and profile URLs live.</p>
+            </div>
+            <div class="glass-card">
+                <h3>AI Lead Scoring</h3>
+                <p>Google Gemini assigns a 0-100 score based on seniority and decision-making power.</p>
+            </div>
+            <div class="glass-card">
+                <h3>Automated Outreach</h3>
+                <p>Generates highly personalized 2-sentence ice-breakers for your top prospects instantly.</p>
+            </div>
+            <div class="glass-card">
+                <h3>Vendor Marketplace</h3>
+                <p>Buy premium LinkedIn automations or sell your own directly to the community.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer style="margin-top: auto; padding: 40px 20px; text-align: center; color: #a5a5a5; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); width: 100%;">
+        <p>&copy; 2026 10x Media. All rights reserved.</p>
+    </footer>
+
+    
+    <!-- Scrollable Expansion Sections -->
+    <div class="enterprise-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <a href="#">Fulfillment</a>
+                <a href="#">Inventory</a>
+                <a href="#">Integrations</a>
+                <a href="#">Analytics</a>
+            </div>
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <a href="#">DTC Brands</a>
+                <a href="#">B2B Wholesale</a>
+                <a href="#">Global Expansion</a>
+                <a href="#">Custom Packaging</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Partners</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="#">Help Center</a>
+                <a href="#">API Documentation</a>
+                <a href="#">Blog</a>
+                <a href="#">Case Studies</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 10x Automations (Ecomflow Theme). All rights reserved.</span>
+            <span>Privacy Policy | Terms of Service</span>
+        </div>
+    </div>
+
+        <!-- Background 3D Cubes -->
+    <div class="bg-cube-wrapper cube-1">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-2">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-3">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+    <div class="bg-cube-wrapper cube-4">
+        <div class="supply-box">
+            <div class="box-face box-front"></div>
+            <div class="box-face box-back"></div>
+            <div class="box-face box-right"></div>
+            <div class="box-face box-left"></div>
+            <div class="box-face box-top"></div>
+            <div class="box-face box-bottom"></div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-toggle-btn" id="chatToggleBtn">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    </div>
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <span>Sales Representative</span>
+            <span class="chat-close" id="chatClose">✖</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-msg msg-ai">Welcome to 10x Automations. How can we streamline your supply chain and LinkedIn growth today?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type a message..." style="flex:1;">
+            <button id="chatSend" class="action-btn" style="padding: 10px 15px; min-width:auto;">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <header class="hero" style="margin-bottom: 30px;">
+        <h1 style="font-size:3rem;">Simple <span class="gradient-text">Pricing</span></h1>
+    </header>
+    <div class="pricing-grid">
+        <div class="glass-card" style="text-align: center;">
+            <h3>Pro Plan</h3>
+            <h1 style="margin: 20px 0;">$49<span style="font-size:1rem;color:#a5a5a5;">/mo</span></h1>
+            <p style="margin-bottom:20px; color:#a5a5a5;">Full access to AI lead scoring and outreach generation.</p>
+            <a href="/marketplace" class="action-btn" style="display:inline-block; text-decoration:none; width:100%;">Get Started</a>
+        </div>
+        <div class="glass-card" style="text-align: center; border-color:#00b4d8;">
+            <h3>Enterprise</h3>
+            <h1 style="margin: 20px 0;">$199<span style="font-size:1rem;color:#a5a5a5;">/mo</span></h1>
+            <p style="margin-bottom:20px; color:#a5a5a5;">Dedicated support and unlimited API volume.</p>
+            <a href="/meeting" class="action-btn" style="display:inline-block; text-decoration:none; width:100%;">Contact Sales</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

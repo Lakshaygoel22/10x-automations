@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x Automations Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="{% block body_class %}{% endblock %}">
+    <div class="grid-overlay"></div>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    
+    <nav class="navbar">
+        <a href="/" class="logo" style="text-decoration:none;">10x Automations</a>
+        <div class="nav-links">
+            <a href="/marketplace">Marketplace</a>
+            <a href="/library">My Library</a>
+            <a href="/vendor">Vendor Portal</a>
+            <a href="/features">Features</a>
+            <a href="/pricing">Pricing</a>
+            <a href="/dashboard" class="nav-btn" style="text-decoration:none;">Deploy Agent</a>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+    <footer style="margin-top: auto; padding: 40px 20px; text-align: center; color: #a5a5a5; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); width: 100%;">
+        <div style="display:flex; justify-content:center; gap: 20px; margin-bottom: 20px;">
+            <a href="/meeting" style="color:#00b4d8; text-decoration:none;">Book Executive Demo</a>
+            <a href="/marketplace" style="color:#00b4d8; text-decoration:none;">Explore Automations</a>
+        </div>
+        <p>&copy; 2026 10x Media. All rights reserved.</p>
+        <p>New digital product soon to be hosted on Whop.</p>
+    </footer>
+    {% endblock %}
+</body>
+</html>
